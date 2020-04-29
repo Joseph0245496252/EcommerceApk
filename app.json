@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "NativeApp3",
-    "slug": "NativeApp3",
+    "name": "ecommerceApp",
+    "slug": "ecommerceApp",
     "platforms": [
       "ios",
       "android",
