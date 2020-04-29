@@ -1,6 +1,6 @@
-import React, { Component } from './node_modules/react'
+import React, { Component } from 'react'
 import { Text, View, StyleSheet, Image } from 'react-native'
-import { Rating, AirbnbRating } from './node_modules/react-native-ratings';
+import { Rating, AirbnbRating } from 'react-native-ratings';
 
 
 export class Item extends Component {
