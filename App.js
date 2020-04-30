@@ -8,8 +8,8 @@ export default function App() {
   return (
     <View style={styles.container}>
      {/* <Item /> */}
-     <ItemList />
-     {/* <ItemLdetails /> */}
+     {/* <ItemList /> */}
+     <ItemLdetails />
     </View>
   );
 }

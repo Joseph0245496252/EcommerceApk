@@ -24,12 +24,12 @@ export class ItemList extends Component {
         </View>
       
         <View style={styles.textContainer}>
-          <Text style={styles.text}>Woman Jacket</Text>
+          <Text style={styles.headerText}>Woman Jacket</Text>
         </View>
 
-          <View style={styles.inputcontainer}>
-            <TextInput placeholder="Search Jacket"  placeholderTextColor="#858383" style={styles.input} />
-            <Text style={styles.filter}>Filter</Text>
+          <View style={styles.inputContainer}>
+            <TextInput placeholder="Search Jacket"  placeholderTextColor="#858383" style={styles.searchInput} />
+            <Text style={styles.filterText}>Filter</Text>
           </View>
 
         <View>
@@ -75,45 +75,47 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     alignItems: "center",
   },
+  
+  textContainer: {
+    marginBottom: 20,
+    marginLeft: 20,
+  },
 
-  text: {
+  headerText: {
     fontSize: 20,
     fontWeight: "bold",
     marginVertical: 10,
     color: "blue",
     marginLeft: 15,
   },
-  
-  filter:{
-    position: "absolute",
-    top:10,
-    right:50,
-    fontSize:15,
-    color: "blue",
-    
-    
-  },
-  input:{
+
+  searchInput:{
     backgroundColor: "#ffff",
     height:45,
     marginHorizontal:25,
     borderRadius:10,
     paddingLeft:20,
   },
-  inputcontainer:{
+  
+  filterText:{
+    position: "absolute",
+    top:10,
+    right:50,
+    fontSize:15,
+    color: "blue",
+  },
+
+  inputContainer:{
     marginBottom:20
   },
+
   iconContainer: {
     flexDirection: "row",
     marginVertical: 5,
     marginHorizontal: 15
-  },
-
-  textContainer: {
-    marginBottom: 20,
-    marginLeft: 20,
   }
-  
+
+ 
 })
 
 export default ItemList
