@@ -4,7 +4,7 @@ import { AntDesign, Feather } from '@expo/vector-icons'
 import { Rating } from 'react-native-ratings';
 
 
-export class ItemLdetails extends Component {
+export class ItemDetails extends Component {
 
     render() {
         return (
@@ -24,24 +24,23 @@ export class ItemLdetails extends Component {
                 </View>
 
                 <View style={styles.ImageContainer}>
-                    <Image source={require('../assets/hoodie2.jpg')} style={styles.image} />
+                    <Image source={require('../assets/jacket3.jpg')} style={styles.image} />
                 </View>
 
                 <View style={styles.infosContainer}>
-                    <Text style={styles.title}>CODETRAIN IS AWESOME </Text>
+                    <Text style={styles.title}>Wonder Woman Jacket</Text>
                     <View style={styles.review} >
                         <Text>Review : </Text>
                         <Rating
                             onFinishRating={this.ratingCompleted}
-                            imageSize={20}
+                            imageSize={15}
                             style={{ paddingRight: 100 }}
                         />
                     </View>
                     <View style={styles.line}></View>
 
                     <Text style={styles.textDetail}>
-                        Quis labore consectetur adipisicing ipsum
-                        nulla sint et nostrud deserunt nulla ullamco ea id.
+                        God is good all the time and all the time God is good
                     </Text>
                     <View style={styles.textDetail2} >
                         <Text style={styles.textColor} >
@@ -85,115 +84,15 @@ export class ItemLdetails extends Component {
 
 const styles = StyleSheet.create({
     container: {
-        marginHorizontal: 10,
-        backgroundColor: "#ededed",
-        marginTop:0
+        backgroundColor: "#ddf",
+        marginVertical: -80,
     },
-    line:{
-        width:60,
-        height:8,
-        borderRadius:20,
-        backgroundColor:"#769ae8",
-        marginTop:10
-    },
-    cartContainer:{
-        flexDirection:"row",
-        borderRadius:20,
-        justifyContent:"space-evenly",
-        alignItems:"center",
-      height:70,
-      backgroundColor:"#769ae8",
-      marginBottom:5
-    },
-    AddCartText:{
-        color:"white",
-        fontWeight:"bold",
-        fontSize:18
-    },
-    cartText:{
-        marginRight:10,
-    },
-    cartTextAmount:{
-        color:"white"
-    },
-    cartTextAmount2:{
-        color:"white",
-        fontWeight:"bold",
-        fontSize:25
-    },
-    AddCartContainer:{
-        backgroundColor:"#4b5fde",
-        height:50,
-        width:110,
-        alignItems:"center",
-        borderRadius:10,
-        justifyContent:"center",
-        
-    },
-    infosContainer:{
-        marginHorizontal:40
-    },
-    textDetail2:{
-        backgroundColor:"white",
-        height:50,
-        justifyContent:"center",
-        
-    },
-    sizeContainer: {
-        flexDirection: "row",
-        marginTop: 10,
-        marginBottom:5,
-        alignSelf: "center",
-        backgroundColor: "#ededed",
-        height: 80,
-        width: 300,
-        justifyContent: "center",
-        alignItems: "center"
-    },
-    activeItem: {
-        backgroundColor: "#769ae8"
-    },
-    activeItemFont: {
-        color:"white"
-    },
-    sizeItem: {
-        borderWidth: 0.5,
-        borderColor: "gray",
-        width: 50,
-        height: 50,
-        justifyContent: "center",
-        alignItems: "center",
-        marginRight: 5,
-        backgroundColor: "white",
-        borderRadius: 10
 
-    },
-    sizeItemText: {
-        fontSize: 18,
-        fontWeight: "bold"
-    },
-    review: {
-        flexDirection: "row"
-    },
-    textDetail: {
-        marginVertical: 10,
-        fontSize: 16,
-
-    },
-    textColor: {
-        fontSize: 15,
-        color: "blue",
-       paddingLeft:10
-    },
-    title: {
-        fontWeight: "bold",
-        fontSize: 20,
-        marginVertical: 10
-    },
     iconContainer: {
         flexDirection: "row",
         marginBottom: 5
     },
+
     leftIcon: {
         backgroundColor: "white",
         borderRadius: 50,
@@ -215,13 +114,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
 
     },
-    ImageContainer: {
-        alignSelf: "center"
-    },
-    image: {
-        width:250,
-        height:200
-    },
+    
     heart: {
         position: "absolute",
         top: 60,
@@ -235,6 +128,137 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
 
+
+    ImageContainer: {
+        alignSelf: "center"
+    },
+
+    image: {
+        width:240,
+        height:200,
+    },
+
+    infosContainer:{
+        marginHorizontal:30,
+    },
+
+    title: {
+        fontWeight: "bold",
+        fontSize: 20,
+        marginVertical: 10
+    },
+
+    review: {
+        flexDirection: "row"
+    },
+
+    line:{
+        width:60,
+        height:5,
+        borderRadius:20,
+        backgroundColor:"#769ae8",
+        marginTop:10
+    },
+
+    textDetail: {
+        marginVertical: 10,
+        fontSize: 16,
+
+    },
+
+    textDetail2:{
+        backgroundColor:"white",
+        height:50,
+        justifyContent:"center",
+        marginHorizontal:-27,
+    },
+
+    textColor: {
+        fontSize: 15,
+        color: "blue",
+       paddingLeft:10,
+       alignSelf: "center",
+       backgroundColor: "#c8c9c1"
+    },
+
+    sizeContainer: {
+        flexDirection: "row",
+        marginTop: 10,
+        marginBottom:5,
+        alignSelf: "center",
+        backgroundColor: "#ededed",
+        height: 50,
+        width: 250,
+        justifyContent:"space-evenly",
+        alignItems: "center",
+    },
+
+    sizeItem: {
+        borderColor: "gray",
+        width: 35,
+        height: 35,
+        justifyContent: "center",
+        alignItems: "center",
+        marginRight: 5,
+        backgroundColor: "white",
+        borderRadius: 5
+
+    },
+    sizeItemText: {
+        fontSize: 10,
+        fontWeight: "bold"
+    },
+
+    cartContainer:{
+        flexDirection:"row",
+        borderRadius:10,
+        justifyContent:"space-evenly",
+        alignItems:"center",
+      height:60,
+      backgroundColor:"#769ae8",
+      marginTop:10,
+      marginBottom:100
+    },
+
+    AddCartText:{
+        color:"white",
+        fontWeight:"bold",
+        fontSize:15
+    },
+
+    cartText:{
+        marginRight:10,
+    },
+
+    cartTextAmount:{
+        color:"white"
+    },
+
+    cartTextAmount2:{
+        color:"white",
+        fontWeight:"bold",
+        fontSize:20,
+        marginLeft:20
+    },
+
+    AddCartContainer:{
+        backgroundColor:"blue",
+        height:40,
+        width:100,
+        alignItems:"center",
+        borderRadius:10,
+        justifyContent:"center",
+        marginLeft:50  
+    },
+    
+    activeItem: {
+        backgroundColor: "blue",
+        
+    },
+    activeItemFont: {
+        color:"white"
+    },
+    
 })
 
-export default ItemLdetails
+export default ItemDetails;

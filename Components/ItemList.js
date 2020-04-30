@@ -51,8 +51,8 @@ export class ItemList extends Component {
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: "#ddf",
     marginVertical: -80,
-    backgroundColor: "#ddf"
   },
 
   firstIcon: {
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     alignItems: "center",
   },
-  
+
   textContainer: {
     marginBottom: 20,
     marginLeft: 20,
