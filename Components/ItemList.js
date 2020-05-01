@@ -52,7 +52,7 @@ export class ItemList extends Component {
 const styles = StyleSheet.create({
     container: {
     backgroundColor: "#ddf",
-    marginVertical: -80,
+    paddingTop: 10
   },
 
   firstIcon: {

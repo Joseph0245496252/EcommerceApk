@@ -14,8 +14,7 @@ export class Item extends Component {
 
                 <View style={styles.ImageContainer}>
                     <Image source={img} style={styles.image} />
-                    {/* <View style={styles.backgroundImage}>
-                    </View> */}
+                    
                 </View>
 
                 <View style={styles.infosContainer}>
@@ -76,4 +75,4 @@ const styles = StyleSheet.create({
 
 })
 
-export default Item
+export default Item;
