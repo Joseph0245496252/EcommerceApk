@@ -5,10 +5,10 @@ import Item from './Item'
 
 export class ItemList extends Component {
   list = [
-    { id: "1", name: "Bike Jacket SoftShel Warm", price: "$99", image: require('../assets/jacket.jpg') },
-    { id: "2", name: "I lOVE CODING", price: "$100", image: require('../assets/jacket3.jpg') },
-    { id: "3", name: "CODETRAIN", price: "$200", image: require('../assets/jacket1.jpg') },
-    { id: "4", name: "React Native", price: "$90", image: require('../assets/jacket4.jpeg') },
+    { id: "1", name: "Bike Jacket SoftShel Warm", price: "$99", image: require('../assets/hoodie2.jpg') },
+    { id: "2", name: "I lOVE CODING", price: "$100", image: require('../assets/hoodie3.webp') },
+    { id: "3", name: "CODETRAIN", price: "$200", image: require('../assets/hoodie2.jpg') },
+    { id: "4", name: "React Native", price: "$90", image: require('../assets/hoodie4.jpg') },
 
   ]
   render() {
@@ -24,12 +24,12 @@ export class ItemList extends Component {
         </View>
       
         <View style={styles.textContainer}>
-          <Text style={styles.headerText}>Woman Jacket</Text>
+          <Text style={styles.text}>Woman Jacket</Text>
         </View>
 
-          <View style={styles.inputContainer}>
-            <TextInput placeholder="Search Jacket"  placeholderTextColor="#858383" style={styles.searchInput} />
-            <Text style={styles.filterText}>Filter</Text>
+          <View style={styles.inputcontainer}>
+            <TextInput placeholder="Search Jacket"  placeholderTextColor="#858383" style={styles.input} />
+            <Text style={styles.filter}>Filter</Text>
           </View>
 
         <View>
@@ -50,7 +50,7 @@ export class ItemList extends Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
+    container: {
     backgroundColor: "#ddf",
     marginVertical: -80,
   },
@@ -76,46 +76,41 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
 
-  textContainer: {
-    marginBottom: 20,
-    marginLeft: 20,
-  },
-
-  headerText: {
-    fontSize: 20,
-    fontWeight: "bold",
-    marginVertical: 10,
-    color: "blue",
-    marginLeft: 15,
-  },
-
-  searchInput:{
-    backgroundColor: "#ffff",
-    height:45,
-    marginHorizontal:25,
-    borderRadius:10,
-    paddingLeft:20,
-  },
-  
-  filterText:{
-    position: "absolute",
+  filter:{
+    position:"absolute",
     top:10,
     right:50,
-    fontSize:15,
-    color: "blue",
+    fontSize:20,
+    color:"blue",
+    fontWeight:"bold"
+    
   },
-
-  inputContainer:{
+  input:{
+    borderWidth:0.5,
+    height:50,
+    marginHorizontal:30,
+    borderRadius:15,
+    backgroundColor:"white",
+    paddingLeft:20
+  },
+  inputcontainer:{
     marginBottom:20
   },
-
   iconContainer: {
     flexDirection: "row",
-    marginVertical: 5,
-    marginHorizontal: 15
-  }
+    marginVertical:5,
+    marginHorizontal:15
+  },
 
- 
+  textContainer: {
+    marginBottom: 20,
+    marginLeft: 20
+  },
+  text: {
+    fontSize: 20,
+    fontWeight: "bold",
+    marginVertical:10
+  },
 })
 
 export default ItemList

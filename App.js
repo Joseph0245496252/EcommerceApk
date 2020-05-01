@@ -2,14 +2,14 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Item from './Components/Item';
 import ItemList from './Components/ItemList';
-import ItemDetails from './Components/ItemDetails';
+import ItemLdetails from './Components/Itemdetails';
 
 export default function App() {
   return (
     <View style={styles.container}>
      {/* <Item /> */}
-     {/* <ItemList /> */}
-     <ItemDetails />
+     <ItemList />
+     {/* <ItemLdetails /> */}
     </View>
   );
 }
